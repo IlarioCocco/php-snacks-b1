@@ -36,6 +36,12 @@ for ($i = 0; $i < count($partiteBasket); $i++) {
     $partiteBasket[$i]["puntiSquadraOspite"] . "<br>";
 };
 
+//n.b dopo il for provare con il foreach
+
+// foreach ($variable as $key => $value) {
+//     # code...
+// }
+
 
 echo"<h2>Campionato Italiano di Basket</h2>";
 echo "<hr>";

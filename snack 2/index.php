@@ -11,7 +11,7 @@ if (strlen($name) > 3) {
     echo "$name";
     echo ": il nome in questione è piu lungo di 3 caratteri - <br>";
 } else {
-    echo "il nome è inferiore ai caratteri richiesti";
+    echo "il nome è inferiore ai caratteri richiesti, ";
 }
 
 //La funzione da utilizzare per verificare se una stringa è un numero 
@@ -20,11 +20,11 @@ if (is_numeric($age)) {
     echo "$age";
     echo " è un numero  -  <br>";
 } else {
-    echo "non è un numero -";
+    echo " age non è un numero -";
 }
 
 
-// funzioni utilizzate per la verifica che nella mail sia presente un punto ed una heat
+// controllo che im mail sia presente una chiocciola ed un punto 
 $verifica = false;
 
 if(!empty($_GET['mail'])) {
