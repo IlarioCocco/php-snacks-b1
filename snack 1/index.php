@@ -1,5 +1,18 @@
 <?php
 
+// // Definisco un array di 4 elementi
+// $frutta = array(
+//     1 => 'mela',
+//     2 => 'pera',
+//     3 => 'arancia',
+//     4 => 'banana'
+// );
+
+// // Ora eseguo un ciclo per scorrere gli elementi dell'array
+// foreach ($frutta as $chiave => $frutto) {
+//     echo $chiave . ' - ' . $frutto . '<br>';
+// }
+
 
 
 $partiteBasket = [
@@ -38,8 +51,8 @@ for ($i = 0; $i < count($partiteBasket); $i++) {
 
 //n.b dopo il for provare con il foreach
 
-// foreach ($variable as $key => $value) {
-//     # code...
+// foreach ($partiteBasket as $key => $value) {
+//     echo $key . ' - ' . $value . '<br>';
 // }
 
 
