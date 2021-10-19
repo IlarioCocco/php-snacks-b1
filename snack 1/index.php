@@ -1,5 +1,7 @@
 <?php
 
+
+
 $partiteBasket = [
     [
         "squadraCasa" => "Virtus Bologna",
@@ -27,21 +29,29 @@ $partiteBasket = [
     ],
 ];
 
-echo"<h2>Campionato Italiano di Basket</h2>";
-echo "<hr>";
-echo"<strong>risultato:</strong>
-{$partiteBasket["0"]["squadraCasa"]} - {$partiteBasket["0"]["squadraOspite"]} | 
-{$partiteBasket["0"]["puntiSquadraCasa"]} - {$partiteBasket["0"]["puntiSquadraOspite"]} <br>";
+for ($i = 0; $i < count($partiteBasket); $i++) {
+    echo $partiteBasket[$i]["squadraCasa"] . " - " .
+    $partiteBasket[$i]["squadraOspite"] . " | " .
+    $partiteBasket[$i]["puntiSquadraCasa"] . " - " .
+    $partiteBasket[$i]["puntiSquadraOspite"] . "<br>";
+};
 
-echo "<strong>risultato: </strong>{$partiteBasket["1"]["squadraCasa"]} - {$partiteBasket["1"]["squadraOspite"]} | 
-{$partiteBasket["1"]["puntiSquadraCasa"]} - {$partiteBasket["1"]["puntiSquadraOspite"]} <br>";
 
-echo "<strong>risultato: </strong>{$partiteBasket["2"]["squadraCasa"]} - {$partiteBasket["2"]["squadraOspite"]} | 
-{$partiteBasket["2"]["puntiSquadraCasa"]} - {$partiteBasket["2"]["puntiSquadraOspite"]} <br>";
+// echo"<h2>Campionato Italiano di Basket</h2>";
+// echo "<hr>";
+// echo"<strong>risultato:</strong>
+// {$partiteBasket["0"]["squadraCasa"]} - {$partiteBasket["0"]["squadraOspite"]} | 
+// {$partiteBasket["0"]["puntiSquadraCasa"]} - {$partiteBasket["0"]["puntiSquadraOspite"]} <br>";
 
-echo "<strong>risultato: </strong>{$partiteBasket["3"]["squadraCasa"]} - {$partiteBasket["3"]["squadraOspite"]} | 
-{$partiteBasket["3"]["puntiSquadraCasa"]} - {$partiteBasket["3"]["puntiSquadraOspite"]}";
-// var_dump ($partiteBasket);
+// echo "<strong>risultato: </strong>{$partiteBasket["1"]["squadraCasa"]} - {$partiteBasket["1"]["squadraOspite"]} | 
+// {$partiteBasket["1"]["puntiSquadraCasa"]} - {$partiteBasket["1"]["puntiSquadraOspite"]} <br>";
+
+// echo "<strong>risultato: </strong>{$partiteBasket["2"]["squadraCasa"]} - {$partiteBasket["2"]["squadraOspite"]} | 
+// {$partiteBasket["2"]["puntiSquadraCasa"]} - {$partiteBasket["2"]["puntiSquadraOspite"]} <br>";
+
+// echo "<strong>risultato: </strong>{$partiteBasket["3"]["squadraCasa"]} - {$partiteBasket["3"]["squadraOspite"]} | 
+// {$partiteBasket["3"]["puntiSquadraCasa"]} - {$partiteBasket["3"]["puntiSquadraOspite"]}";
+// // var_dump ($partiteBasket);
 
 ?>
 
