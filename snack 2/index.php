@@ -10,6 +10,8 @@ $mail = $_GET['mail'];
 if (strlen($name) > 3) {
     echo "$name";
     echo ": il nome in questione è piu lungo di 3 caratteri";
+} else {
+    echo "il nome è inferiore ai caratteri richiesti";
 }
 
 
