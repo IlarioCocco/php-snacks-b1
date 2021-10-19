@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    ciao
+    <title>snack 2</title>
 </body>
 
 </html>
