@@ -37,8 +37,8 @@ for ($i = 0; $i < count($partiteBasket); $i++) {
 };
 
 
-// echo"<h2>Campionato Italiano di Basket</h2>";
-// echo "<hr>";
+echo"<h2>Campionato Italiano di Basket</h2>";
+echo "<hr>";
 // echo"<strong>risultato:</strong>
 // {$partiteBasket["0"]["squadraCasa"]} - {$partiteBasket["0"]["squadraOspite"]} | 
 // {$partiteBasket["0"]["puntiSquadraCasa"]} - {$partiteBasket["0"]["puntiSquadraOspite"]} <br>";
