@@ -29,7 +29,7 @@ $verifica = false;
 
 if(!empty($_GET['mail'])) {
     $mail = $_GET['mail'];
-    if (strpos($mail, '@') && strpos($mail, '.')) {
+    if (strpos($mail, '@') && strpos($mail, '.') && strlen($mail) > 20) {
         $verifica = true;
         echo "mail completa, Accesso riuscito -";
     } else {
