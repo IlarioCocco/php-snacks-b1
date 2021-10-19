@@ -15,6 +15,8 @@
 
 <body>
     <title>snack 2</title>
+    <h2>Esercizio snack 2</h2>
+    <hr>
 </body>
 
 </html>
