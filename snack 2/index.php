@@ -14,13 +14,28 @@ if (strlen($name) > 3) {
     echo "il nome è inferiore ai caratteri richiesti";
 }
 
+//La funzione da utilizzare per verificare se una stringa è un numero 
+//in PHP è denominata is_numeric.
 if (is_numeric($age)) {
     echo "$age";
-    echo " è un numero  -";
+    echo " è un numero  -  <br>";
 } else {
     echo "non è un numero -";
 }
 
+
+// funzioni utilizzate per la verifica che nella mail sia presente un punto ed una heat
+$verifica = false;
+
+if(!empty($_GET['mail'])) {
+    $mail = $_GET['mail'];
+    if (strpos($mail, '@') && strpos($mail, '.')) {
+        $verifica = true;
+        echo "mail completa, Accesso riuscito -";
+    } else {
+        echo "mail non completa, Accesso negato -";
+    }
+}
 
 
 ?>
@@ -43,9 +58,6 @@ if (is_numeric($age)) {
     <title>snack 2</title>
     <h2>Esercizio snack 2</h2>
     <hr>
-    
-
-
 </body>
 
 </html>
