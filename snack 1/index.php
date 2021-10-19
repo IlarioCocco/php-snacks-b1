@@ -1,35 +1,39 @@
 <?php
 
-$partiteBasket = [
 
+
+$partiteBasket = [
     [
-        "squdraCasa" => "Virtus Bologna",
-        "squdraOspite" => "Trieste",
+        "squadraCasa" => "Virtus Bologna",
+        "squadraOspite" => "Trieste",
         "puntiSquadraCasa" => 94,
         "puntiSquadraOspite" => 79
     ],
     [
-        "squdraCasa" => "VL Pesaro",
-        "squdraOspite" => "Derthona",
+        "squadraCasa" => "VL Pesaro",
+        "squadraOspite" => "Derthona",
         "puntiSquadraCasa" => 81,
         "puntiSquadraOspite" => 72
     ],
     [
-        "squdraCasa" => "Cremona",
-        "squdraOspite" => "Varese",
+        "squadraCasa" => "Cremona",
+        "squadraOspite" => "Varese",
         "puntiSquadraCasa" => 78,
         "puntiSquadraOspite" => 88
     ],
     [
-        "squdraCasa" => "Dinamo Sassari",
-        "squdraOspite" => "Olimpia Milano",
+        "squadraCasa" => "Dinamo Sassari",
+        "squadraOspite" => "Olimpia Milano",
         "puntiSquadraCasa" => 93,
         "puntiSquadraOspite" => 68
     ],
-    
-
 ];
 
+echo"<h2>Campionato Italiano di Basket</h2>";
+echo "<hr>";
+echo"<strong>risultato: </strong>{$partiteBasket["0"]["squadraCasa"]} - {$partiteBasket["1"]["squadraOspite"]} | 
+{$partiteBasket["0"]["puntiSquadraCasa"]} - {$partiteBasket["1"]["puntiSquadraOspite"]}"; 
+// var_dump ($partiteBasket);
 
 
 ?>
