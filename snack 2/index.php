@@ -1,10 +1,23 @@
 <?php
+// phpinfo();
 
 $name = $_GET['name'];
 $eta = $_GET['age'];
 $mail = $_GET['mail'];
 
+//La funzione da utilizzare per verificare se una stringa è più lunga 
+//di un determinato numero di caratteri in PHP è denominata strlen.
+if (strlen($name) > 3) {
+    echo "$name";
+    echo ": il nome in questione è piu lungo di 3 caratteri";
+}
+
+
+
 ?>
+
+
+
 
 
 <!DOCTYPE html>
@@ -21,9 +34,9 @@ $mail = $_GET['mail'];
     <title>snack 2</title>
     <h2>Esercizio snack 2</h2>
     <hr>
-    <h2><?php echo $name; ?></h2>
-    <h2><?php echo $eta; ?></h2>
-    <h2><?php echo $mail; ?></h2>
+    
+
+
 </body>
 
 </html>
