@@ -1,5 +1,9 @@
 <?php
 
+$name = $_GET['nome'];
+$eta = $_GET['eta'];
+$mail = $_GET['mail'];
+
 ?>
 
 
@@ -17,6 +21,9 @@
     <title>snack 2</title>
     <h2>Esercizio snack 2</h2>
     <hr>
+    <h2><?php echo $name; ?></h2>
+    <h2><?php echo $eta; ?></h2>
+    <h2><?php echo $mail; ?></h2>
 </body>
 
 </html>
