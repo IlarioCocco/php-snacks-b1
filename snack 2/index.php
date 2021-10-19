@@ -9,7 +9,7 @@ $mail = $_GET['mail'];
 //di un determinato numero di caratteri in PHP è denominata strlen.
 if (strlen($name) > 3) {
     echo "$name";
-    echo ": il nome in questione è piu lungo di 3 caratteri - ";
+    echo ": il nome in questione è piu lungo di 3 caratteri - <br>";
 } else {
     echo "il nome è inferiore ai caratteri richiesti";
 }
