@@ -27,8 +27,6 @@ $db = [
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,6 +36,7 @@ $db = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
         .boxContainer {
             max-width: 100%;
@@ -56,7 +55,12 @@ $db = [
             width: 50%;
             padding: 10px;
         }
+
+        li {
+            list-style-type: none;
+        }
     </style>
+
 </head>
 
 
@@ -66,17 +70,25 @@ $db = [
     <div class="boxContainer">
         <div class="green">
             <ul>
-                <?php foreach ($variable as $key => $value) {
-                    # code...
-                } ?>
+
+                <?php foreach ($db["teachers"] as $franco) { ?>
+                    <li>
+                        <?php echo "{$franco["name"]} : {$franco["lastname"]}"; ?>
+                    </li>
+                <?php } ?>
+
             </ul>
         </div>
 
         <div class="gray">
             <ul>
-                <?php foreach ($variable as $key => $value) {
-                    # code...
-                }  ?>
+
+                <?php foreach ($db["pm"] as $franco) { ?>
+                    <li>
+                        <?php echo "{$franco["name"]} : {$franco["lastname"]}"; ?>
+                    </li>
+                <?php } ?>
+
             </ul>
         </div>
     </div>
