@@ -43,34 +43,41 @@ $db = [
             max-width: 100%;
             margin: auto;
             display: flex;
-            justify-content: center;
         }
 
         .green {
             background: lightgreen;
             width: 50%;
-            padding: 15px;
+            padding: 10px;
         }
 
         .gray {
             background: lightgray;
             width: 50%;
-            padding: 15px;
+            padding: 10px;
         }
     </style>
 </head>
 
 
 <body>
-    <h2>esercizio snack 6 php</h2>
+    <h2>Esercizio snack 6 php</h2>
     <hr>
     <div class="boxContainer">
         <div class="green">
-            <h3>ooooooooooooooooooo</h3>
+            <ul>
+                <?php foreach ($variable as $key => $value) {
+                    # code...
+                } ?>
+            </ul>
         </div>
 
         <div class="gray">
-            <h3>ooooooooooooooooooo</h3>
+            <ul>
+                <?php foreach ($variable as $key => $value) {
+                    # code...
+                }  ?>
+            </ul>
         </div>
     </div>
 </body>
