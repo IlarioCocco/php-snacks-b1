@@ -44,13 +44,6 @@ $posts = [
 
 ?>
 
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -80,13 +73,6 @@ $posts = [
             </li>
         <?php } ?>
     </ul>
-
-
-
-
-
-
-
 
     <!-- $lista = [
     'pane',
