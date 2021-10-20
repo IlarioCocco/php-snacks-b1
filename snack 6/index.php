@@ -29,30 +29,50 @@ $db = [
 
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .boxContainer {
+            max-width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .green {
+            background: lightgreen;
+            width: 50%;
+            padding: 15px;
+        }
+
+        .gray {
+            background: lightgray;
+            width: 50%;
+            padding: 15px;
+        }
+    </style>
 </head>
+
 
 <body>
     <h2>esercizio snack 6 php</h2>
     <hr>
-    <ul>
-        <?php foreach ($db['teachers'] as $nominativo) { ?>
-            <li>
-                <?= $nominativo; ?>
-            </li>
-        <?php } ?>
+    <div class="boxContainer">
+        <div class="green">
+            <h3>ooooooooooooooooooo</h3>
+        </div>
 
-    </ul>
-
+        <div class="gray">
+            <h3>ooooooooooooooooooo</h3>
+        </div>
+    </div>
 </body>
 
 </html>
