@@ -1,5 +1,8 @@
 <?php
 
+//Creare un array di array. Ogni array figlio avrà come chiave una data in questo formato: DD-MM-YYYY es 01-01-2007 
+//e come valore un array di post associati a quella data. Stampare ogni data con i relativi post.
+
 $posts = [
     '10/01/2019' => [
         [
@@ -39,18 +42,9 @@ $posts = [
     ],
 ];
 
-
-
 ?>
 
 
-<ul>
-    <?php foreach ($posts as [0] => 'titoli') { ?>
-
-        <li> <?= 'titoli'; ?> </li>
-
-    <?php }  ?>
-</ul>
 
 
 
@@ -68,6 +62,31 @@ $posts = [
 </head>
 
 <body>
+    <h2>Esercizio snack 3 php</h2>
+
+    <ul>
+        <?php foreach ($posts as $date => $articoli) { ?>
+            <li>
+                <h4><?php echo $date; ?></h4>
+                <ul>
+                    <?php foreach ($articoli as $articolo) { ?>
+                        <li>
+                            <h3><?= $articolo["title"]; ?></h3>
+                            <div>Autore: <em><?= $articolo["author"]; ?></em></div>
+                            <p><?= $articolo["text"]; ?></p>
+                        </li>
+                    <?php } ?>
+                </ul>
+            </li>
+        <?php } ?>
+    </ul>
+
+
+
+
+
+
+
 
     <!-- $lista = [
     'pane',

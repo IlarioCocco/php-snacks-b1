@@ -37,11 +37,7 @@ if(!empty($_GET['mail'])) {
     }
 }
 
-
 ?>
-
-
-
 
 
 <!DOCTYPE html>

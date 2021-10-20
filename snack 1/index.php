@@ -15,8 +15,8 @@
 
 
 
-$partiteBasket = [
-    [
+$partiteBasket = [ //array primo livello
+    [   //array secondo livello
         "squadraCasa" => "Virtus Bologna",
         "squadraOspite" => "Trieste",
         "puntiSquadraCasa" => 94,
@@ -42,11 +42,13 @@ $partiteBasket = [
     ],
 ];
 
+// var_dump($partiteBasket[1]);
+
 for ($i = 0; $i < count($partiteBasket); $i++) {
     echo $partiteBasket[$i]["squadraCasa"] . " - " .
-    $partiteBasket[$i]["squadraOspite"] . " | " .
-    $partiteBasket[$i]["puntiSquadraCasa"] . " - " .
-    $partiteBasket[$i]["puntiSquadraOspite"] . "<br>";
+        $partiteBasket[$i]["squadraOspite"] . " | " .
+        $partiteBasket[$i]["puntiSquadraCasa"] . " - " .
+        $partiteBasket[$i]["puntiSquadraOspite"] . "<br>";
 };
 
 //n.b dopo il for provare con il foreach
@@ -56,7 +58,7 @@ for ($i = 0; $i < count($partiteBasket); $i++) {
 // }
 
 
-echo"<h2>Campionato Italiano di Basket</h2>";
+echo "<h2>Campionato Italiano di Basket</h2>";
 echo "<hr>";
 // echo"<strong>risultato:</strong>
 // {$partiteBasket["0"]["squadraCasa"]} - {$partiteBasket["0"]["squadraOspite"]} | 
@@ -88,7 +90,5 @@ echo "<hr>";
 <body>
     <title>snack 1</title>
     <h2>Esercizio snack 1</h2>
-    <hr>
 </body>
-
 </html>
