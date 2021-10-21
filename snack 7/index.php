@@ -6,23 +6,32 @@ $alunni = [
     [
         "nome" => "Franco",
         "cognome" => "Ciccio",
-        "voti" => [1,2,3,4,5,]
+        "voti" => [1,4,3,4,5,]
     ],
 
     [
         "nome" => "Sandro",
         "cognome" => "Rossi",
-        "voti" => [1, 2, 3, 4, 5,]
+        "voti" => [1, 7, 6, 4, 5,]
     ],
 
     [
         "nome" => "Sara",
         "cognome" => "Pani",
-        "voti" => [1, 2, 3, 4, 5,]
+        "voti" => [1,9, 3, 7, 5,]
     ],
-
 ];
 
+function calcolo($numeri) {
+
+    $somma = 0;
+    
+    foreach($numeri as $numero) {
+        $somma += $numero;
+    }
+
+    return round($somma / count($numeri), 2);
+}
 
 ?>
 
@@ -38,7 +47,8 @@ $alunni = [
 <body>
     <h2>
         <?php foreach ($alunni as $valore) { ?>
-        <h3><?php echo "{$valore["nome"]} : {$valore["cognome"]} = {$valore["voti"]}"; ?></h3>
+        <h3><?php echo "{$valore["nome"]} {$valore["cognome"]}:"; ?></h3>
+        <p>media: <?php echo calcolo($valore["voti"]); ?></p>
         <?php } ?>
     </h2>
 </body>
