@@ -22,6 +22,7 @@ $alunni = [
     ],
 ];
 
+//funzione calcolo media array voti
 function calcolo($numeri) {
 
     $somma = 0;
