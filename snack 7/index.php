@@ -38,7 +38,7 @@ $alunni = [
 <body>
     <h2>
         <?php foreach ($alunni as $valore) { ?>
-        <h3><?php echo "{$valore["nome"]} : {$valore["cognome"]}"; ?></h3>
+        <h3><?php echo "{$valore["nome"]} : {$valore["cognome"]} = {$valore["voti"]}"; ?></h3>
         <?php } ?>
     </h2>
 </body>
